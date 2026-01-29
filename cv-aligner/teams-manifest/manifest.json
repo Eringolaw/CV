@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.0.0",
+  "id": "REPLACE-WITH-NEW-GUID",
+  "packageName": "com.noviam.cvaligner",
+  "developer": {
+    "name": "Noviam",
+    "websiteUrl": "https://noviam.com",
+    "privacyUrl": "https://noviam.com/privacy",
+    "termsOfUseUrl": "https://noviam.com/terms"
+  },
+  "name": {
+    "short": "CV Aligner",
+    "full": "Noviam CV Alignment Tool"
+  },
+  "description": {
+    "short": "Align CVs to job descriptions",
+    "full": "AI-powered tool to align candidate CVs to job descriptions and generate Noviam-branded documents."
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#004796",
+  "staticTabs": [
+    {
+      "entityId": "cvaligner",
+      "name": "CV Aligner",
+      "contentUrl": "https://REPLACE-WITH-YOUR-VERCEL-URL.vercel.app",
+      "websiteUrl": "https://REPLACE-WITH-YOUR-VERCEL-URL.vercel.app",
+      "scopes": ["personal"]
+    }
+  ],
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://REPLACE-WITH-YOUR-VERCEL-URL.vercel.app",
+      "canUpdateConfiguration": false,
+      "scopes": ["team", "groupchat"]
+    }
+  ],
+  "permissions": ["identity"],
+  "validDomains": ["REPLACE-WITH-YOUR-VERCEL-URL.vercel.app", "vercel.app"]
+}
